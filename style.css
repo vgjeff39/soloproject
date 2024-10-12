@@ -20,7 +20,7 @@
 
 
   /* Global Styles */
-a{
+a {
     text-decoration: none;
   }
 
@@ -61,7 +61,6 @@ button {
 
 
   /* Navigation  */
-  
   nav{
     width: 100%;
     position: absolute;
@@ -218,8 +217,7 @@ button {
 
 
   /* Header */
-
-  header{
+header{
     height: 100vh;
     background-color: #f8f8f8;
 
@@ -421,7 +419,6 @@ button {
 
 
 /* Banner */
-
 #banner{
     color: #f8f8f8;
     background-color: var(--lightblack);
@@ -459,7 +456,6 @@ button {
 
 
 /* Choose */
-
 #choose{
     background-size: cover;
     background-repeat: no-repeat;
@@ -531,9 +527,11 @@ button {
 
 
 .choose__text__btn{
+    
     font-size: 16px;
     font-weight: 700;
     margin-top: 12px;
+    margin:auto;
     padding: 18px 30px;
     color: white;
     border: none;
@@ -543,6 +541,7 @@ button {
     justify-content: center;
     align-items: center;
     width: fit-content;
+    transition: 300ms ease;
     gap: 8px;
     box-shadow: 0 10px 15px 0 rgba(255, 83, 48, 0.3)
 
@@ -608,7 +607,6 @@ button {
 
 
 /* Testimonials */
-
 #testimonials{
     background-color: #f8f8f8;
 
@@ -726,7 +724,6 @@ button {
 
 
 /* Download */
-
 #download{
     background-image: url(assets/download-bg.png);
     background-size: cover;
@@ -781,7 +778,6 @@ button {
 
 
 /* Footer */
-
 .footer__row{
     display: flex;
     flex-wrap: wrap;
@@ -895,8 +891,7 @@ button {
 
 
 /* XL Screens */
-
-@media (max-width: 1024px) {
+@media (max-width: 1024px){
         /* Navigation */
         .nav__links,
         .nav__btns{
@@ -926,6 +921,7 @@ button {
 
         /* Choose */
         .choose__content{
+            display: flex;
             flex-direction: column;
             align-items: center;
             text-align: center;
@@ -957,7 +953,6 @@ button {
 
 
 /* Tablets-Med Screen */
-
 @media (max-width: 768px) {
         /* Header */
         .header-bg,
@@ -1014,8 +1009,8 @@ button {
 
 
         /* Sm Screens */
-        
-        /* Testimonials */
+        @media (max-width: 640px) {
+                /* Testimonials */
                 .testimonial{
                     padding: 32px;
                 }
